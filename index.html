@@ -1,0 +1,72 @@
+<html>
+
+<head>
+  <title>MYSQL CONNECTION</title>
+</head>
+
+<body style="background: url('s2.jfif') 0%">
+
+  <center>
+    <h1>CREATE DATABASE</h1>
+    <form action="http://127.0.0.1:8081/process_get" method="GET">
+      DB Name: <input type="text" name="db_name"> <br>
+      <input type="submit" value="Submit">
+    </form>
+  </center>
+
+  <h3>Reference of creating table</h3>
+  <p>CREATE TABLE table_name(obj1 int (or) varchar(10) (or) char(10) (or) float (or) double primary key (or) FOREIGN
+    KEY(user_id)
+    REFERENCES users(user_id), .......) </p>
+
+  <center>
+    <h1>CREATE Table</h1>
+    <form action="http://127.0.0.1:8081/process_create" method="GET">
+      Table Name: <input type="text" name="tb_name"> <br>
+      objects: <input type="text" name="obj"> <br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <h1>INSERT Values</h1>
+    <form action="http://127.0.0.1:8081/process_insert" method="GET">
+      Table Name: <input type="text" name="tb_name"> <br>
+      title: <input type="text" name="obj"> <br>
+      name: <input type="text" name="name"> <br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <h1>SELECT Values</h1>
+    <form action="http://127.0.0.1:8081/process_select" method="GET">
+      Table Name: <input type="text" name="tb_name"> <br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <h1>UPDATE Values</h1>
+    <form action="http://127.0.0.1:8081/process_update" method="GET">
+      Table Name: <input type="text" name="tb_name"> <br>
+      Title: <input type="text" name="obj"> <br>
+      OLD Name: <input type="text" name="name"> <br>
+      NEW Name: <input type="text" name="new"> <br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <h1>ORDERBY Values</h1>
+    <form action="http://127.0.0.1:8081/process_order" method="POST">
+      <input type="submit" value="Submit">
+    </form>
+
+    <h1>DELETE Value</h1>
+    <form action="http://127.0.0.1:8081/process_delete" method="POST">
+      <input type="submit" value="Submit">
+    </form>
+
+    <h1>DROP Table</h1>
+    <form action="http://127.0.0.1:8081/process_drop" method="GET">
+      TABLE NAME:<input type="text" name="tb_name"> <br>
+      <input type="submit" value="Submit">
+    </form>
+
+  </center>
+</body>
+
+</html>
